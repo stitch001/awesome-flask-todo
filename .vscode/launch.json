@@ -5,13 +5,14 @@
             "name": "Python",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
-            "program": "${file}",
+            "stopOnEntry": false,
+            "program": "${workspaceRoot}/manage.py",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
                 "RedirectOutput"
-            ]
+            ],
+            "args": ["runserver"]
         },
         {
             "name": "Python Console App",
